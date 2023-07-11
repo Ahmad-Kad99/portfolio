@@ -52,6 +52,27 @@
         text-decoration: none;
         color: #098120;
       }
+      .wrapping {
+        width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background:url(comic.jpeg);
+        border: 1px solid #FBEE23;
+        box-shadow:rgb(251, 238, 35,);
+      }
+      .card {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background:url(frontend\ hero.jpg);
+        border: 1px solid #dddddd;
+        margin-bottom: 20px;
+        grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];;
+
+      }
+
     </style>
   </head>
   <body>
@@ -85,6 +106,10 @@
         </ul>
       </div>
       <div class="comic-panel">
+        <h3>Background in IT</h3>
+        <span>I currently have a Diploma of Information Technology after completion in January 2023</span>
+      </div>
+      <div class="comic-panel">
         <h3>Contact</h3>
         <a
           href="https://www.linkedin.com/in/ahmad-kaddour-75b70a257/?originalSubdomain=au"
@@ -92,10 +117,14 @@
         >
         <a href="https://www.airtasker.com/users/b9491533f161-p-28226066/">Airtasker</a>
       </div>
-      <div class="comic-panel">
-        <h3>Background in IT</h3>
-        <span>I currently have a Diploma of Information Technology after completion in January 2023</span>
-      </div>
+    </div>
+    <div class="wrapping">
+        <div class="card">
+            <h3>Previous Work</h3>
+            <video controls>
+                <source src="fawkner.webm" type="video/mp4">
+              </video>
+        </div>
     </div>
   </body>
 </html>

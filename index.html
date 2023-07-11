@@ -1,100 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ahmad's Portfolio</title>
-    <style>
-      body {
-        background: url(angelina-kichukova-1i6mrD_t9gA-unsplash.jpg);
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <title>Ahmads Portfolio</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-      .container {
-        width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
 
-      h1 {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        text-align: center;
-        color: #333333;
-      }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-      .comic-panel {
-        display: grid;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-        background-color: #eeeeee;
-        border: 1px solid #dddddd;
-        margin-bottom: 20px;
-        grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];;
+    .comic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
 
-      }
+    .comic {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-      .comic-panel img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-      .comic-panel h3 {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 30px;
-      }
-      li {
-        list-style: none;
-      }
-      a {
-        text-decoration: none;
-        color: #098120;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img src="ahmad.jpeg" alt="Ahmad Kadodur" />
-      <h1>Ahmad Kaddour</h1>
+    .comic img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
 
-      <div class="comic-panel">
+    .comic h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .comic p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="comic-grid">
+      <div class="comic">
+        <img src="ahmad.jpeg" width="100" alt="Ahmad Kaddour"><h1>Ahmad Kaddour</h1>
         <h3>What do i do</h3>
-        <span
-          >I am currently a part time worker at Zenu Real Estate CRM Website
-          Builder as a front end developer</span
-        >
+        <p>I am currently a frontend developer at Zenu Real Estate CRM Website Builder.</p>
       </div>
-      <div class="comic-panel">
-        <h3>Qualaties</h3>
-        <ul>
-          <li>Leadership</li>
-          <li>Committment</li>
-          <li>Communication</li>
-          <li>Hands on</li>
-        </ul>
+      <div class="comic">
+        <h3>Background in IT</h3>
+        <p>I currently hold a Diploma in IT after completion in 2023 along with 3 months experience at Zenu Real Estate CRM Website Builder.</p>
       </div>
-      <div class="comic-panel">
+      <div class="comic">
+        <img src="comic3.jpg" alt="Comic 3">
         <h3>Hobbies</h3>
         <ul>
-          <li>Playing Soccer</li>
-          <li>Giving back to charity</li>
-          <li>Playstation</li>
-          <li>Watching movies</li>
+        <li>Playing soccer</li>
+        <li>Giving back to charity</li>
+        <li>Movies</li>
+        <li>Hanging with mates</li>
         </ul>
       </div>
-      <div class="comic-panel">
-        <h3>Contact</h3>
-        <a
-          href="https://www.linkedin.com/in/ahmad-kaddour-75b70a257/?originalSubdomain=au"
-          >Linkedin</a
-        >
-      </div>
-      <div class="comic-panel">
-        <h3>Background in IT</h3>
-        <span>I currently have a Diploma of Information Technology after completion in January 2023</span>
-      </div>
+      <!-- Add more comic items here -->
     </div>
-  </body>
+  </div>
+</body>
 </html>

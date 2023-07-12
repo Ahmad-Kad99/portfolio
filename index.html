@@ -31,11 +31,24 @@
         display: grid;
       }
       .content p {
-        color: #fff;
+        color: #b3b3b3;
       }
-      li{
+      li {
         list-style-type: none;
         display: flex;
+      }
+      .card {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        gap: 20px;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        font-size: 14px;
+        align-items: flex-start;
+        padding: 20px;
       }
     </style>
   </head>
@@ -50,20 +63,39 @@
         <h1>I am a HTML</h1>
         <span>Developer</span>
       </div>
-        <div class="menu">
-          <a href="#">Home<i class="fa-light fa-bars"></i></a>
-          <a href="#">Resume</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-        </div>
+      <div class="menu">
+        <a href="#">Home<i class="fa-light fa-bars"></i></a>
+        <a href="#">Resume</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
     <div class="content">
-      <ul>
-        <li> <p>26.07.2003</p> <span class="material-symbols-outlined"> calendar_month </span></li>
-        <li> <p>Melbourne, Australia</p> <span class="material-symbols-outlined"> location_on </span></li>
-        <li><p>8372156904</p><span><img src="whatsapp.png" width="30" height="30" alt="WhatsApp"></span>
-      </ul>
+      <div class="wrapping">
+        <ul>
+          <div class="card">
+            <li>
+              <p>26.07.2003</p>
+              <span class="material-symbols-outlined"> calendar_month </span>
+            </li>
+          </div>
+          <div class="card">
+            <li>
+              <p>Melbourne, Australia</p>
+              <span class="material-symbols-outlined"> location_on </span>
+            </li>
+          </div>
+          <div class="card">
+            <li>
+              <p>8372156904</p>
+              <span
+                ><img src="whatsapp.png" width="30" height="30" alt="WhatsApp"
+              /></span>
+            </li>
+          </div>
+        </ul>
+      </div>
       <p>I am a Frontend developer at Zenu Real Estate CRM Website Builder</p>
     </div>
   </body>

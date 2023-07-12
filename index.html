@@ -15,6 +15,7 @@
       }
       .container {
         border-top: 1px solid #000;
+        max-width: 600px;
       }
       .container p {
         color: #fff;
@@ -22,7 +23,7 @@
       .container h1 {
         color: #fff;
       }
-      .container span {
+      .container h2 {
         color: #a6b800;
         font-size: 20px;
       }
@@ -54,7 +55,7 @@
         border-radius: 30px;
       }
       .highlight {
-        background-color: #a6b800;
+        background-color: #9c27b0;
         color: #a6b800;
       }
       .menu {
@@ -74,7 +75,7 @@
       .information p {
         color: #ffffff;
       }
-      .panel{
+      .panel {
         display: flex;
         position: relative;
         width: 16.6%;
@@ -87,15 +88,9 @@
         align-items: flex-start;
         padding: 20px;
       }
-      
     </style>
   </head>
   <body>
-    <div class="loading-container">
-      <div class="loader"></div>
-      <h1>Loading...</h1>
-    </div>
-  
     <div class="heading">
       <div class="image-wrapper">
         <img src="ahmad.jpeg" alt="Ahmad Kaddour" />
@@ -103,8 +98,7 @@
       <div class="container">
         <p>Hello Everyone👋</p>
         <h1>I'm Ahmad Kaddour</h1>
-        <h1>I am a HTML</h1>
-        <span class="highlight">Developer</span>
+        <h1>I am a HTML</h1><h2>Developer</h2>
       </div>
       <div class="menu">
         <a href="#">Home<i class="fa-light fa-bars"></i></a>
@@ -166,8 +160,11 @@
           <p>Product Photography</p>
         </div>
         <div class="panel">
-            <img src="search-engine-marketing.png" alt="search-engine-marketing">
-            <p>Seo Optimization</p>
+          <img
+            src="search-engine-marketing.png"
+            alt="search-engine-marketing"
+          />
+          <p>Seo Optimization</p>
         </div>
         <div class="panel">
           <span class="material-symbols-outlined"> share </span>

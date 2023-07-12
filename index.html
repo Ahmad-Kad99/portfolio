@@ -74,7 +74,7 @@
       .information p {
         color: #ffffff;
       }
-      .panel{
+      .panel {
         display: flex;
         position: relative;
         width: 16.6%;
@@ -87,9 +87,47 @@
         align-items: flex-start;
         padding: 20px;
       }
+      .loading-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loader {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #3498db;
+        animation: spin 2s linear infinite;
+        margin-bottom: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      h1 {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        color: #333;
+      }
     </style>
   </head>
   <body>
+    <div class="loading-container">
+      <div class="loader"></div>
+      <h1>Loading...</h1>
+    </div>
+
     <div class="heading">
       <div class="image-wrapper">
         <img src="ahmad.jpeg" alt="Ahmad Kaddour" />
@@ -160,8 +198,11 @@
           <p>Product Photography</p>
         </div>
         <div class="panel">
-            <img src="search-engine-marketing.png" alt="search-engine-marketing">
-            <p>Seo Optimization</p>
+          <img
+            src="search-engine-marketing.png"
+            alt="search-engine-marketing"
+          />
+          <p>Seo Optimization</p>
         </div>
         <div class="panel">
           <span class="material-symbols-outlined"> share </span>

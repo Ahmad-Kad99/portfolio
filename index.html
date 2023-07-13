@@ -166,6 +166,55 @@
         color: #a6b800;
         font-size: 20px;
       }
+      .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: #333;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #333;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-date {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .timeline-description {
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      font-size: 14px;
+    }
     </style>
   </head>
   <body>
@@ -215,8 +264,10 @@
           <div class="card">
             <li>
               <a href="https://www.whatsapp.com/">8372156904</a>
-              <i class="fa-brands fa-whatsapp" style="color: #57e389;"></i>
-          </li>
+              <span
+                ><img src="whatsapp.png" width="30" height="30" alt="WhatsApp"
+              /></span>
+            </li>
           </div>
         </ul>
       </div>
@@ -311,6 +362,41 @@
           <p>Human Resources</p>
         </div>
       </div>
+    </div>
+    <div class="section-two">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2008</div>
+          <div class="timeline-description">
+          I first started soccer in January 2008.
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2010</div>
+          <div class="timeline-description">
+            My first tooth came out
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2015</div>
+          <div class="timeline-description">
+            Graduated Elementry school
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-description">
+            Survived a global pandemic
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-description">
+            Started with Zenu Real Estate CRM Website Builder.
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

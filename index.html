@@ -5,9 +5,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('##splide', {
+            type: 'loop',        // Slider type: 'loop', 'slide', 'fade'
+            perPage: 3,          // Number of slides to show at once
+            gap: '1rem',         // Space between slides
+            autoplay: true,      // Auto play the slides
+            interval: 3000,      // Auto play interval in milliseconds
+            breakpoints: {       // Responsive breakpoints
+                600: {
+                perPage: 5      // Change options for screens below 600px
+                }
+            }
+            }).mount();
+        });
+    </script>
     <title>Ahmad's Portfolio</title>
     <style>
       body {
@@ -255,29 +270,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var slideIndex = 0;
-var slides = document.querySelectorAll('.slideshow img');
-
-function showSlides() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = 'block';
-  
-  setTimeout(showSlides, 2000); // Change slide every 2 seconds
-}
-
-showSlides();
-
-    </script>
     <div class="section-two">
       <div class="section-wrapper">
         <h2>What others are saying</h2>

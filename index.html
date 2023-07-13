@@ -32,7 +32,7 @@
         display: grid;
       }
       .content p {
-        color: #b3b3b3;
+        color: #ffffff;
       }
       li {
         list-style-type: none;
@@ -72,11 +72,11 @@
         position: relative;
       }
       .menu a {
-        text-decoration:none;
+        text-decoration: none;
         color: #a6b800;
       }
-      .menu a:hover{
-        text-decoration:line-through;
+      .menu a:hover {
+        text-decoration: line-through;
       }
       .panel span {
         color: #ffffff;
@@ -88,9 +88,9 @@
       .information p {
         color: #ffffff;
       }
-      .wrapping a{
+      .wrapping a {
         text-decoration: none;
-        color:#ffffff;
+        color: #ffffff;
       }
       .panel {
         display: flex;
@@ -133,6 +133,23 @@
       .section-two h2 {
         color: #ffffff;
         text-decoration: underline #a6b800;
+      }
+      .section-wrapper{
+        display: flex;
+      }
+      .content-wrapper{
+        display: flex;
+        position: relative;
+        width: 16.6%;
+        margin: 0;
+        gap: 20px;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        font-size: 14px;
+        align-items: flex-start;
+        padding: 20px;
+
       }
     </style>
   </head>
@@ -227,7 +244,17 @@
       </div>
     </div>
     <div class="section-two">
-      <h2>What others are saying</h2>
+      <div class="section-wrapper">
+        <h2>What others are saying</h2>
+        <div class="content-wrapper">
+          <h3>Victor Blaze</h3>
+          <span>I am paying Ahmad as he is worth it</span>
+        </div>
+        <div class="content-wrapper">
+          <h3>Kaelara Dawnthorn</h3>
+          <span>I am paying Ahmad as he is worth it</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

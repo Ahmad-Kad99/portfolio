@@ -255,7 +255,14 @@
     <div class="section-two">
       <div class="section-wrapper">
         <h2>What others are saying</h2>
-        
+        <script>
+          var splide = new Splide( '.splide', {
+  perPage: 3,
+  rewind : true,
+} );
+
+splide.mount();
+        </script>
         <div class="content-wrapper">
           <h3>Victor Blaze</h3>
           <p>Union Rep</p>

@@ -1,33 +1,102 @@
 body {
     background-color: #000;
   }
-  .heading {
+  .container-one {
     display: flex;
-    width: 100%;
   }
-  .container {
-    border-top: 1px solid #000;
-    width: 100%;
+  .social-media {
+    position: absolute;
+    margin: 0 auto;
+    left: 15px;
   }
-  .container p {
-    color: #fff;
+  button{
+    border-radius: 20px;
+    background-color: #ffffff;
   }
-  .container h1 {
-    color: #fff;
+
+  button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
   }
-  .container h2 {
-    color: #a6b800;
-    font-size: 20px;
+
+  .container-two {
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
   }
-  .content span {
-    color: #a6b800;
-    display: grid;
+  
+  .container-two span{
+    color:#e6ff00;
   }
-  .content p {
+  .container-two h1{
     color: #ffffff;
-    text-align: center;
   }
-  li {
+  .container-three{
+    display: flex;
+  }
+  .contact-details p{
+    color: #ffffff;
+  }
+  .upper .tools span{
+    font-size: 40px;
+  }
+
+  .container-three p {
+    color: #525252;
+  }
+  .section-two .container-one h2 {
+    color:#ffffff;
+    text-decoration: underline #e6ff00;
+  }
+  .section-two span{
+    color: #ffffff;
+  }
+  .section-two .upper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .section-two .container-two{
+    display: flex
+  }
+  .section-two .higher h2{
+    display: flex;
+    color: #ffffff;
+    text-decoration: underline #e6ff00;
+  }
+  .section-two .higher{
+    display: flex;
+  }
+  .section-two .lower{
+    display: flex;
+  }
+  .section-two .lower h3{
+    color: #ffffff;
+
+  }
+  .section-two .container-two .lower p{
+    color:#525252;
+
+  }
+  .section-two .container-two .quotations{
+    color: #e6ff00
+  }
+  .section-two .lower img{ 
+      border-radius: 50%;
+      width: 200px; /* Adjust the width and height as needed */
+      height: 200px;
+      object-fit: cover; /* Maintain aspect ratio and cover the entire circular area */
+    }
+    .content-wrapper h3{
+      text-align: center;
+    }
+    .content-wrapper p{
+      text-align: center;
+    }
+    
+    
+/*   li {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -57,26 +126,7 @@ body {
   .image-wrapper {
     border-radius: 30px;
   }
-  .menu {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
 
-    position: relative;
-  }
-  .menu a {
-    text-decoration: none;
-    color: #a6b800;
-  }
-  .menu a:hover {
-    text-decoration: line-through;
-  }
-  .panel span {
-    color: #ffffff;
-  }
   .information h2 {
     color: #ffffff;
     text-decoration: underline #a6b800;
@@ -210,4 +260,4 @@ body {
   background-color: #f2f2f2;
   border-radius: 5px;
   font-size: 14px;
-}
+} */

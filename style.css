@@ -244,8 +244,8 @@ body {
 .timeline-item::after {
   content: '';
   position: absolute;
-  width: 13px;
-  height: 13px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: #e6ff00;
   top: 10px;
@@ -253,19 +253,14 @@ body {
   transform: translateX(-50%);
 }
 
-.timeline-date {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-}
 
+.timeline-description span{
+  color: #e6ff00;
+
+}
 .timeline-description {
   padding: 10px;
-  background-color: goldenrod;
+  background-color: #333333;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -273,18 +268,24 @@ body {
   color: #ffffff;
 }
 .timeline-description p{
-  color: #333333;
+  color: #fff;
 }
 
-.skills-chart {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+
+.section-three{
+  display: flex;
 }
 .section-three h3{
   color: #f0f0f0;
   text-decoration: underline #e6ff00;
 }
+.section-three h2{
+  color: #262426;
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
 .skill {
   margin-bottom: 15px;
 }

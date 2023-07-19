@@ -25,6 +25,18 @@ body {
     width: 33%;
     flex-wrap: wrap;
   }
+  .icon-container {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+   .text p{
+    color: #ffffff;
+  }
+  .text a{
+    text-decoration: none;
+    color: #ffffff;
+  }
   
   .container-two span{
     color:#e6ff00;
@@ -38,12 +50,17 @@ body {
   .contact-details p{
     color: #ffffff;
   }
-  .upper .tools span{
-    font-size: 40px;
+  .tools span{
+    font-size: 30px;
   }
 
   .container-three p {
     color: #525252;
+  }
+  .section-two .icon-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
   .section-two .container-one h2 {
     color:#ffffff;
@@ -58,7 +75,7 @@ body {
     grid-gap: 10px;
   }
   .section-two .container-two{
-    display: flex
+    display: grid;
   }
   .section-two .higher h2{
     display: flex;
@@ -68,32 +85,44 @@ body {
   .section-two .higher{
     display: flex;
   }
+  
   .section-two .lower{
-    display: flex;
+    display:flex ;
   }
-  .section-two .lower h3{
+   .quote {
+    color: #e6ff00;
+  }
+  .text-image-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+  }
+  .text-image-container h3{
     color: #ffffff;
-
   }
-  .section-two .container-two .lower p{
-    color:#525252;
-
+  
+  .circular-image {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circular shape */
+    margin-right: 10px; /* Adds spacing between the image and content */
   }
-  .section-two .container-two .quotations{
-    color: #e6ff00
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
   }
-  .section-two .lower img{ 
-      border-radius: 50%;
-      width: 200px; /* Adjust the width and height as needed */
-      height: 200px;
-      object-fit: cover; /* Maintain aspect ratio and cover the entire circular area */
-    }
-    .content-wrapper h3{
-      text-align: center;
-    }
-    .content-wrapper p{
-      text-align: center;
-    }
+  
+  .caption {
+    margin-top: 5px; /* Adds spacing between the title and caption */
+  }
+  
+  
+  
+  
+  
+  
+    
     
     
 /*   li {

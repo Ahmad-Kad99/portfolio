@@ -157,105 +157,202 @@
           <h2>What others are saying</h2>
         </div>
         <div class="lower">
-        <div class="text-cards">
-          <span class="material-symbols-outlined">
-            format_quote
-            </span>
-          <span>
-            Ahmad is a homegrown talent
-          </span>
-        </div>
-        <span class=" quote material-symbols-outlined">
-          format_quote
-          </span>
-        <div class="text-cards">
-          <span>
-            Ahmad is a homegrown talent
-          </span>
-        </div>
-        
-        <div class="text-cards">
-          <span class="quote material-symbols-outlined">
-            format_quote
-            </span>
-          <span>
-            Ahmad is a homegrown talent
-          </span>
-        </div>
-        <div class="text-cards">
-          <span class="quote material-symbols-outlined">
-            format_quote
-            </span>
-          <span>
-            Ahmad is a homegrown talent
-          </span>
-        </div>
-        </div>
-        <div class="text-image-container">
-          <img src="ahmad.jpeg" alt="Your Image" class="circular-image">
-          <div class="content-wrapper">
-            <h3>Ahmad Kaddour</h3>
-            <span class="caption">Founder</span>
-          </div>
-        </div>
-
-        <div class="text-image-container">
-          <img src="ahmad.jpeg" alt="Your Image" class="circular-image">
-          <div class="content-wrapper">
-            <h3>Ahmad Kaddour</h3>
-            <span class="caption">Founder</span>
-          </div>
-
-          <div class="text-image-container">
-            <img src="ahmad.jpeg" alt="Your Image" class="circular-image">
-            <div class="content-wrapper">
-              <h3>Ahmad Kaddour</h3>
-              <span class="caption">Founder</span>
+          <div class="splide" id="quote-slider">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg"  alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="text-cards">
+                    <span class="material-symbols-outlined">
+                      format_quote
+                    </span>
+                    <span>
+                      Ahmad is a homegrown talent
+                    </span>
+                    <div class="image-container">
+                      <img src="ahmad.jpeg" alt="Founder">
+                      <h3>Ahmad Kaddour</h3>
+                      <p>Founder</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="text-image-container">
-              <img src="ahmad.jpeg" alt="Your Image" class="circular-image">
-              <div class="content-wrapper">
-                <h3>Ahmad Kaddour</h3>
-                <span class="caption">Founder</span>
-              </div>
+          </div>
+        </div>
+      </section>
+         <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide("#quote-slider", {
+        type: "loop",
+        perPage: 3,
+        autoplay: true,
+        pauseOnHover: false,
+        interval: 3000,
+      }).mount();
+    });
+  </script>
+      </script>
 
-        
-    </section>
-
-    <!-- <div class="section-wrap">
+     <div class="section-wrap">
+      <h3>About me</h3>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-date">2008</div>
             <div class="timeline-description">
-              I had started primary school.
+              <span>2008-2015</span>
+              <h2>Campbellfield Primary</h2>
+              <p>I would gladly pay over 600 dollars for tavonline. Tavonline has really helped our business. I like tavonline more and more each day because it makes my life a lot easier.</p>
+              
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">2010</div>
             <div class="timeline-description">
-              Event description here.
+              <span>2016-2021</span>
+              <h2>John Fawkner College</h2>
+              <p>I would gladly pay over 600 dollars for tavonline. Tavonline has really helped our business. I like tavonline more and more each day because it makes my life a lot easier.</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-date">2015</div>
             <div class="timeline-description">
-              Event description here.
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2020</div>
-            <div class="timeline-description">
-              Event description here.
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2023</div>
-            <div class="timeline-description">
-              Event description here.
+              <span>2022-2023</span>
+              <h2>Melbourne Polytechnic</h2>
+              <p>I would gladly pay over 600 dollars for tavonline. Tavonline has really helped our business. I like tavonline more and more each day because it makes my life a lot easier.</p>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+                  </div>
+          
+              </div>
+              <div class="section-three">
+                <h3>My skills</h3>
+              </div>
+              <div class="skills-chart">
+                <div class="skill">
+                  <div class="skill-name"><p>HTML</p></div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name"><p>CSS</p></div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <div class="skill-name"><p>JavaScript</p></div>
+                  <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <!-- Add more skills as needed -->
+              </div>
+        
+      
   </body>
 </html>

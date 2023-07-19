@@ -89,48 +89,22 @@ body {
   .section-two .lower{
     display:flex ;
   }
-   .quote {
-    color: #e6ff00;
-  }
-  .text-image-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    align-items: center;
-  }
-  .text-image-container h3{
+  .lower .image-container h3{
     color: #ffffff;
+    text-align:left;
+
   }
-  
-  .circular-image {
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the size as needed */
-    border-radius: 50%; /* Creates a circular shape */
-    margin-right: 10px; /* Adds spacing between the image and content */
+  .lower .image-container p{
+    color: #525252;
+    text-align: left;
   }
-  
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
+  .lower .image-container img{
+    border-radius: 50%;
+    width: 40%;
+    object-fit: cover;
   }
-  
-  .caption {
-    margin-top: 5px; /* Adds spacing between the title and caption */
-  }
-  
-  
-  
-  
-  
-  
-    
-    
-    
-/*   li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+  #quote-slider:hover{
+    color: #e6ff00;
   }
   ul {
     display: flex;
@@ -257,6 +231,10 @@ body {
   left: 50%;
   margin-left: -1px;
 }
+.section-wrap h3{
+  color: #f2f2f2;
+  text-decoration: underline #a6b800;
+}
 
 .timeline-item {
   position: relative;
@@ -266,10 +244,10 @@ body {
 .timeline-item::after {
   content: '';
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #e6ff00;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -282,11 +260,51 @@ body {
   transform: translateX(-50%);
   font-size: 14px;
   font-weight: bold;
+  color: #fff;
 }
 
 .timeline-description {
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color: goldenrod;
   border-radius: 5px;
   font-size: 14px;
-} */
+}
+.timeline-description h2{
+  color: #ffffff;
+}
+.timeline-description p{
+  color: #333333;
+}
+
+.skills-chart {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section-three h3{
+  color: #f0f0f0;
+  text-decoration: underline #e6ff00;
+}
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-name p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #f2f2f2;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #a6b800; /* Progress bar color */
+  border-radius: 8px;
+}

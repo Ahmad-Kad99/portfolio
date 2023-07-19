@@ -1,6 +1,7 @@
 body {
     background-color: #000;
   }
+  
   .container-one {
     display: flex;
   }
@@ -305,7 +306,59 @@ body {
 }
 
 .progress {
+  width: 100%;
   height: 100%;
   background-color: #a6b800; /* Progress bar color */
   border-radius: 8px;
+}
+.section-three{
+  display: flex;
+}
+.section-three-container-two h3{
+  color: #fff;
+  text-decoration: underline #e6ff00;
+}
+.section-three-menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+.section-three-menu a{
+  text-decoration: none;
+  color: #fff;
+}
+.section-three-menu a:hover{
+  color: #e6ff00;
+}
+.section-three-img-wrap{
+  display: flex;
+}
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.image-link:hover .overlay-text {
+  opacity: 1;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
 }

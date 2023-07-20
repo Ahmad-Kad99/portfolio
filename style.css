@@ -419,6 +419,7 @@ h2, p {
 }
 .section-four h2{
   color: #fff;
+  text-decoration: underline #e6ff00;
 }
 .section-four-container-one{
   display: flex;
@@ -438,6 +439,7 @@ h2, p {
 }
 .main-container{
   display: flex;
+  justify-content: space-between;
   
 }
 .main-container .higher p{
@@ -448,23 +450,54 @@ h2, p {
 .main-container .higher a:hover{
   color: #e6ff00;
 }
-.form-container {
-  max-width: 1200px;
-  margin: 120px auto;
+.form {
+  max-width: 300px;
   padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  text-align: center;
 }
 
-form {
-  display: grid;
-  flex-direction: row;
+h2 {
+  margin-bottom: 20px;
+  color: #333;
 }
 
-label {
-  margin-bottom: 5px;
-  color: #000000;
-  font-size: 20px;
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
+
+.btnn {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.link {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 input {
   padding: 8px;
@@ -487,15 +520,15 @@ button {
   overflow: hidden; 
 }
 .marquee img {
-  display: inline-block; /* Displays images in a row */
-  max-height: 100px; /* Adjust the height as needed */
-  margin-right: 20px; /* Adjust the spacing between images */
-  animation: marquee 10s linear infinite; /* Change the animation duration and timing function as desired */
+  display: inline-block;
+  max-height: 100px; 
+  margin-right: 20px; 
+  animation: marquee 10s linear infinite; 
 }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-20%); } /* Adjust the percentage based on the number of images */
+  100% { transform: translateX(-20%); } 
 }
 .footer-wrapper{
   display: flex;
@@ -510,4 +543,8 @@ button {
 }
 .footer-wrapper a:hover{
   color: #e6ff00;
+}
+footer{
+  color:rgb(80,92,124);
+  font-size: 20px;
 }

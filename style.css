@@ -548,3 +548,46 @@ footer{
   color:rgb(80,92,124);
   font-size: 20px;
 }
+/* Add this line to make the site responsive */
+@media screen and (max-width: 768px) {
+  /* Adjust header layout for smaller screens */
+  header .menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .dropdown-content {
+    display: none;
+  }
+  header .show {
+    display: block;
+  }
+
+  /* Adjust section-one layout for smaller screens */
+  .section-one {
+    text-align: center;
+  }
+  .section-one .container-one {
+    flex-direction: column;
+  }
+  .section-one .social-media {
+    margin-top: 10px;
+  }
+
+  /* Adjust section-three layout for smaller screens */
+  .section-three {
+    text-align: center;
+  }
+  .section-three .section-three-container-two {
+    margin-top: 20px;
+  }
+  .section-three .section-three-img-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* Adjust section-four layout for smaller screens */
+  .section-four .section-four-container-one {
+    flex-direction: column;
+  }
+}

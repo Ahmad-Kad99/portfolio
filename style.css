@@ -271,7 +271,13 @@ body {
 .timeline-description p{
   color: #fff;
 }
-
+.text-cards span{
+  color: #e6ff00;
+  font-size: 30px;
+}
+.text-cards p{
+  color: #333333;
+}
 
 .section-three{
   display: flex;
@@ -361,4 +367,98 @@ body {
 h2, p {
   margin: 0;
   padding: 0;
+}
+.section-four h2{
+  color: #fff;
+}
+.section-four-container-one{
+  display: flex;
+}
+.section-four-container-one span{
+  color: #333333;
+}
+.section-four-container-one .higher{
+  display: grid;
+}
+.section-four-container-one .higher a{
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.section-four-container-one.section-four-wrapper p{
+  color: #f2f2f2;
+}
+.main-container{
+  display: flex;
+  
+}
+.main-container .higher p{
+  color: #f2f2f2;
+  text-align: left;
+
+}
+.main-container .higher a:hover{
+  color: #e6ff00;
+}
+.form-container {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form {
+  display: grid;
+  flex-direction: row;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #000;
+}
+
+button {
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden; 
+}
+.marquee img {
+  display: inline-block; /* Displays images in a row */
+  max-height: 100px; /* Adjust the height as needed */
+  margin-right: 20px; /* Adjust the spacing between images */
+  animation: marquee 10s linear infinite; /* Change the animation duration and timing function as desired */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-20%); } /* Adjust the percentage based on the number of images */
+}
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper span{
+  color: #333333;
+}
+.footer-wrapper a{
+  color: #fff;
+  text-decoration: none;
+}
+.footer-wrapper a:hover{
+  color: #e6ff00;
 }

@@ -2,6 +2,51 @@ body {
     background-color: #000;
   }
   
+.menu {
+  position: relative;
+  float: right;
+}
+
+.menu button {
+  width: 93px; 
+  height: 93px; 
+  border-radius: 50%; 
+  background-color: #e6ff00; 
+  color: #fff; 
+  font-size: 16px; 
+  border: none;
+  cursor: pointer;
+  outline: none;
+ }
+ #dropdownBtn span{
+  color: #000;
+  font-size: 20px;
+ }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #ffffff;
+  text-decoration: line-through #e6ff00;
+}
+
+
+.menu:hover .dropdown-content {
+  display: block;
+}
   .container-one {
     display: flex;
   }
@@ -20,7 +65,7 @@ body {
     font-size: 15px;
     color: #000;
   }
-
+  
   .container-two {
     display: flex;
     width: 33%;
@@ -215,6 +260,10 @@ body {
   .material-symbols-outlined {
     color: #a6b800;
     font-size: 20px;
+  }
+  #section-three h3{
+    color: #f2f2f2;
+    text-decoration: underline #e6ff00;
   }
   .timeline {
   position: relative;

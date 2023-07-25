@@ -83,12 +83,15 @@ body {
     font-size: 15px;
     color: #000;
   }
+  .social-media a:hover{
+    color: #333;
+  }
   
   .container-two {
-    display: flex;
     width: 76%;
     align-items: center;
   }
+  .container-two,
   .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -120,12 +123,12 @@ body {
   }
 
   .container-three p {
-    color: #525252;
+    color: #fff;
     text-align: center;
   }
   .section-two .icon-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
   }
   .section-two .container-one h2 {

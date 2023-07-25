@@ -1,6 +1,8 @@
 body {
-    background-color: #000;
+    background-color: #000000;
   }
+
+  
   
 .menu {
   position: relative;
@@ -32,14 +34,16 @@ body {
 }
 
 .dropdown-content a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
   display: block;
   font-size: 16px;
+
 }
 
+
 .dropdown-content a:hover {
-  color: #ffffff;
+  color: #e6ff00;
   text-decoration: line-through #e6ff00;
 }
 
@@ -47,8 +51,21 @@ body {
 .menu:hover .dropdown-content {
   display: block;
 }
+  section {
+    
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+  .section-one{
+    gap: 45px;
+    display: flex;
+  }
+
   .container-one {
     display: flex;
+    width: 24%;
   }
   .social-media {
     position: absolute;
@@ -67,9 +84,9 @@ body {
   }
   
   .container-two {
-    display: flex;
-    width: 33%;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 76%;
   }
   .icon-container {
     display: inline-flex;
@@ -187,27 +204,11 @@ body {
     text-decoration: none;
     color: #ffffff;
   }
-  .panel {
-    display: flex;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    gap: 20px;
-    flex-direction: column;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 14px;
-    align-items: flex-start;
-    padding: 20px;
-  }
+  
   .color-one {
     color: #a6b800;
   }
-  .cue-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
+ 
   button {
     background-color: #ffffff;
     border: none;
@@ -545,7 +546,7 @@ button {
   color: #e6ff00;
 }
 footer{
-  color:rgb(80,92,124);
+  color:#fff;
   font-size: 20px;
 }
 /* Add this line to make the site responsive */

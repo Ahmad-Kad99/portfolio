@@ -70,11 +70,12 @@ body {
   .social-media {
     position: absolute;
     margin: 0 auto;
-    left: 15px;
+    top: 15px;
   }
   button{
     border-radius: 20px;
     background-color: #ffffff;
+    left: 15px;
   }
 
   button a{
@@ -84,12 +85,13 @@ body {
   }
   
   .container-two {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     width: 76%;
+    align-items: center;
   }
   .icon-container {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
   }
   
@@ -119,6 +121,7 @@ body {
 
   .container-three p {
     color: #525252;
+    text-align: center;
   }
   .section-two .icon-container{
     display: grid;

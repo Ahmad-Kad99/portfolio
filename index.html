@@ -18,7 +18,22 @@
       href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
       rel="stylesheet"
     />
-
+    <div class="loading-screen">
+      <div class="loading-spinner">
+        <img src="design-3.png" width="50" height="50" alt="">
+      </div>
+    </div>
+    <div class="content" id="content">
+      <h1>My Portfolio</h1>
+      <img src="example-image.jpg" alt="Example Image">
+    </div>
+    <script>
+      // Simulate loading time (3 seconds in this example)
+      setTimeout(function() {
+        document.getElementById("content").style.display = "block";
+        document.querySelector(".loading-screen").style.display = "none";
+      }, 3000);
+    </script>
     <title>Ahmad's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>

@@ -263,7 +263,7 @@ body {
   }
   
   .section-two{
-    display: block;
+    display:block;
     text-align: left;
     width: 100%;
   }
@@ -279,6 +279,7 @@ body {
   .section-two .container-one h2 {
     color:#ffffff;
     text-align: left;
+    font-size: 24px;
     width: 100%;
     text-decoration: underline #e6ff00;
   }
@@ -303,6 +304,7 @@ body {
   .container-two {
     max-width: 800px;
     margin: 0 auto;
+    display: inline;
   }
   .container-two .higher {
     font-size: 18px;
@@ -312,7 +314,7 @@ body {
     letter-spacing: -1px;
     line-height: 30px;
   }
-  
+
   .lower {
     display: flex;
     justify-content: center;
@@ -335,6 +337,7 @@ body {
     padding-right: 30px;
     display: block;
     margin-bottom: 10px;
+    color: #ADC000;
   }
   
   .text-cards p {
@@ -387,6 +390,10 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .container-two .higher h2{
+    display: flex;
+    text-align: left
   }
   .card {
     display: flex;
@@ -449,164 +456,71 @@ body {
   .section-wrapper {
     display: flex;
   }
-  .content-wrapper {
-    display: flex;
-    position: relative;
-    width: 16.6%;
-    margin: 0;
-    gap: 20px;
-    flex-direction: column;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 14px;
-    align-items: flex-start;
-    padding: 20px;
+  .section-three {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
   }
-  .content-wrapper h3 {
-    color: #ffffff;
+
+  /* Container for "Education" heading */
+  .container-one {
+    text-align: center;
+    margin-bottom: 30px;
   }
-  .content-wrapper p {
-    color: #969696;
-  }
-  .content-wrapper span {
-    color: #b3b3b3;
-  }
-  .content-wrapper,
-  .material-symbols-outlined {
-    color: #a6b800;
-    font-size: 20px;
-  }
-  #section-three h3{
-    color: #f2f2f2;
+
+  /* Heading "Education" */
+  .container-one h3 {
+    font-size: 24px;
+    color: #FFF;
     text-decoration: underline #e6ff00;
   }
+
+  /* Timeline */
   .timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #333;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
-.section-wrap h3{
-  color: #f2f2f2;
-  text-decoration: underline #a6b800;
-}
+  /* Timeline Item */
+  .timeline-item {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 50px;
-}
+  /* Timeline Description */
+  .timeline-description {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+  }
 
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #e6ff00;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  /* Timeline Item Date */
+  .timeline-description span {
+    font-size: 16px;
+    color: #e6ff00;
+  }
 
+  /* Timeline Item Heading */
+  .timeline-description h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffffff
+  }
 
-.timeline-description span{
-  color: #e6ff00;
+  /* Timeline Item Description */
+  .timeline-description p {
+    font-size: 16px;
+    margin-bottom: 20px;
 
-}
-.timeline-description {
-  padding: 10px;
-  background-color: #333333;
-  border-radius: 5px;
-  font-size: 14px;
-}
-.timeline-description h2{
-  color: #ffffff;
-}
-.timeline-description p{
-  color: #fff;
-}
-.text-cards span{
-  color: #e6ff00;
-  font-size: 30px;
-}
-.text-cards p{
-  color: #333333;
-}
+  }
+  
+  
 
-.section-three{
-  display: flex;
-}
-.section-three h3{
-  color: #f0f0f0;
-  text-decoration: underline #e6ff00;
-}
-.section-three h2{
-  color: #262426;
-  writing-mode: vertical-rl;
-  font-size: 24px;
-  padding: 5px 10px;
-}
-
-.skill {
-  margin-bottom: 15px;
-}
-
-.skill-name p {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #f2f2f2;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.progress {
-  width: 100%;
-  height: 100%;
-  background-color: #a6b800; /* Progress bar color */
-  border-radius: 8px;
-}
-.section-three{
-  display: flex;
-}
-.section-three-container-two h3{
-  color: #fff;
-  text-decoration: underline #e6ff00;
-}
-.section-three-menu ul{
-  display: flex;
-  justify-content: space-between;
-}
-.section-three-menu a{
-  text-decoration: none;
-  color: #fff;
-}
-.section-three-menu a:hover{
-  color: #e6ff00;
-}
-.section-three-img-wrap{
-  display: flex;
-}
-.image-link {
-  position: relative;
-  display: inline-block;
-}
-
+ 
 .overlay-text {
   position: absolute;
   top: 0;
@@ -763,46 +677,17 @@ footer{
   color:#fff;
   font-size: 20px;
 }
-/* Add this line to make the site responsive */
+ /* Add your custom styles here */
+ @media screen and (max-width: 600px) {
+  /* Styles for screens with width up to 600px (e.g., iPhones) */
+  .loading-spinner img {
+    width: 30px;
+    height: 30px;
+  }
+  /* Add more styles for smaller screens if needed */
+}
+
 @media screen and (max-width: 768px) {
-  /* Adjust header layout for smaller screens */
-  header .menu {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header .dropdown-content {
-    display: none;
-  }
-  header .show {
-    display: block;
-  }
-
-  /* Adjust section-one layout for smaller screens */
-  .section-one {
-    text-align: center;
-  }
-  .section-one .container-one {
-    flex-direction: column;
-  }
-  .section-one .social-media {
-    margin-top: 10px;
-  }
-
-  /* Adjust section-three layout for smaller screens */
-  .section-three {
-    text-align: center;
-  }
-  .section-three .section-three-container-two {
-    margin-top: 20px;
-  }
-  .section-three .section-three-img-wrap {
-    flex-wrap: wrap;
-  }
-
-  /* Adjust section-four layout for smaller screens */
-  .section-four .section-four-container-one {
-    flex-direction: column;
-  }
+  /* Styles for screens with width up to 768px (e.g., smaller Android devices) */
+  /* Adjust styles as needed for smaller screens */
 }

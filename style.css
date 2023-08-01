@@ -774,17 +774,68 @@ footer{
   color:#fff;
   font-size: .7rem;
 }
- /* Add your custom styles here */
- @media screen and (max-width: 600px) {
-  /* Styles for screens with width up to 600px (e.g., iPhones) */
-  .loading-spinner img {
-    width: 30px;
-    height: 30px;
+@media (max-width: 768px) {
+  .container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  /* Add more styles for smaller screens if needed */
-}
 
-@media screen and (max-width: 768px) {
-  /* Styles for screens with width up to 768px (e.g., smaller Android devices) */
-  /* Adjust styles as needed for smaller screens */
+  .img-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    text-align: center;
+  }
+
+  .section-one .lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-two .icon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .timeline {
+    display: block;
+  }
+
+  .timeline-item {
+    margin: 20px 0;
+  }
+
+  .timeline-description {
+    text-align: center;
+  }
+
+  .section-three-container-two .skills-chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .section-four .section-four-img-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .marquee {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

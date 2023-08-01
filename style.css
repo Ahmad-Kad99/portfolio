@@ -72,49 +72,14 @@ body {
   position: relative;
   float: right;
 }
-
-.menu button {
-  width: 93px; 
-  height: 93px; 
-  border-radius: 50%; 
-  background-color: #e6ff00; 
-  color: #fff; 
-  font-size: 16px; 
-  border: none;
-  cursor: pointer;
-  outline: none;
- }
- #dropdownBtn span{
-  color: #000;
-  font-size: 20px;
- }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-.dropdown-content a {
-  color: #fff;
+.menu a{
   text-decoration: none;
-  display: block;
-  font-size: 16px;
-
+  color: #fff;
+}
+.menu a:hover{
+  color: #a6b800;
 }
 
-
-.dropdown-content a:hover {
-  color: #e6ff00;
-  text-decoration: line-through #e6ff00;
-}
-
-
-.menu:hover .dropdown-content {
-  display: block;
-}
   section {
     
     max-width: 1290px;
@@ -300,6 +265,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    line-height: 4rem;
   }
   .container-two {
     max-width: 800px;
@@ -309,7 +275,7 @@ body {
   .container-two .higher {
     font-size: 18px;
     position: relative;
-    display: flex;
+    display: inline;
     flex-direction: column;
     letter-spacing: -1px;
     line-height: 30px;
@@ -476,121 +442,233 @@ body {
   }
 
   /* Timeline */
+  /* Styling for the timeline container */
   .timeline {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 
-  /* Timeline Item */
+  /* Styling for timeline items */
   .timeline-item {
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 30px;
-  }
-
-  /* Timeline Description */
-  .timeline-description {
-    width: 100%;
+    flex: 0 0 300px; /* Set a fixed width for each item */
+    margin-right: 20px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #333;
+    border-radius: 5px;
   }
 
-  /* Timeline Item Date */
+  .timeline-description {
+    text-align: center;
+  }
+
   .timeline-description span {
-    font-size: 16px;
-    color: #e6ff00;
+    color: #ADC000;
+    font-size: 18px;
+    font-weight: bold;
   }
 
-  /* Timeline Item Heading */
   .timeline-description h2 {
+    color: #fff;
     font-size: 24px;
-    margin: 10px 0;
-    color: #ffffff
+    margin-bottom: 10px;
   }
 
-  /* Timeline Item Description */
   .timeline-description p {
+    color: #fff;
     font-size: 16px;
-    margin-bottom: 20px;
-
   }
   
+  /* Section Three Container Two */
+  .section-three-container-two {
+    padding: 50px 0;
+    text-align: left;
+  }
+
+  /* Skills Chart Heading "My Skills" */
+  .section-three-container-two h3 {
+    text-decoration: underline #ADC000;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Skills Chart Category "L A N G U A G E" */
+  .section-three-container-two h2 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: left;
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-decoration: none;
+  }
+
+  /* Skills Chart Container */
+  .skills-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Individual Skill */
+  .skill {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Skill Name and Percentage */
+  .skill-name p {
+    font-size: 18px;
+    margin: 0;
+    color: #fff;
+  }
+
+  /* Progress Bar Container */
+  .progress-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  /* Progress Bar */
+  .progress {
+    height: 100%;
+    background-color: #ADC000;
+  }
   
 
  
-.overlay-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  transition: opacity 0.3s;
-}
+  .container-one h3, .section-four-container-two h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-.image-link:hover .overlay-text {
-  opacity: 1;
-}
+  /* Styling for image links */
+  .section-four-img-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-h2, p {
-  margin: 0;
-  padding: 0;
-}
-.section-four h2{
-  color: #fff;
-  text-decoration: underline #e6ff00;
-}
-.section-four-container-one{
-  display: flex;
-}
-.section-four-container-one span{
-  color: #333333;
-}
-.section-four-container-one .higher{
-  display: grid;
-}
-.section-four-container-one .higher a{
-  text-decoration: none;
-  color: #f2f2f2;
-}
-.section-four-container-one.section-four-wrapper p{
-  color: #f2f2f2;
-}
-.main-container{
-  display: flex;
-  justify-content: space-between;
-  
-}
-.main-container .higher p{
-  color: #f2f2f2;
-  text-align: left;
+  .image-link {
+    display: block;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+  }
 
-}
-.main-container .higher a:hover{
-  color: #e6ff00;
-}
-.form {
-  max-width: 300px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  text-align: center;
-}
+  .image-link img {
+    width: 190px;
+    height: 190px;
+  }
 
-h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay-text h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .image-link:hover .overlay-text {
+    opacity: 1;
+  }
+
+  /* Styling for "GET IN TOUCH" section */
+  .section-four-container-two h2 {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+    text-decoration: underline #ADC000;
+  }
+
+  /* Styling for contact information */
+  .higher {
+    max-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .higher span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .higher a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .higher p {
+    color: #fff;
+    margin: 0;
+  }
+
+  /* Styling for the form */
+  .form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .form span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="message"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form button.btnn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form button.btnn a {
+    color: #000;
+    text-decoration: none;
+  }
 
 input[type="email"],
 input[type="password"] {
@@ -598,10 +676,41 @@ input[type="password"] {
   padding: 10px;
   margin-bottom: 10px;
 }
+.higher {
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
+.higher span {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.higher p{
+  text-align: left;
+}
+
+.higher a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.higher p {
+  color: #fff;
+  margin: 0;
+}
 .btnn {
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -638,7 +747,6 @@ input {
 
 button {
   padding: 10px;
-  background-color: #f2f2f2;
   color: #000000;
   border: none;
   border-radius: 3px;
@@ -675,7 +783,7 @@ button {
 }
 footer{
   color:#fff;
-  font-size: 20px;
+  font-size: .7rem;
 }
  /* Add your custom styles here */
  @media screen and (max-width: 600px) {

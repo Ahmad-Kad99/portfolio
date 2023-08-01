@@ -286,10 +286,11 @@ body {
   }
   
   .text-cards img {
-    width: 100px;
-    height: 100px;
+    width:50px;
     border-radius: 50%;
     margin-bottom: 10px;
+    float: left;
+    padding-left: 10px;
   }
   
   .text-cards h3 {
@@ -423,6 +424,19 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
+  .btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
 
   /* Styling for timeline items */
   .timeline-item {

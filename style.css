@@ -73,7 +73,6 @@ body {
 
   .img-wrapper img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 15px 157px 15px ;
   }
 
   .upper {
@@ -197,7 +196,7 @@ body {
   .section-one .container-three p {
     color: #aeaeae;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     line-height:2.1rem ;
   }
   

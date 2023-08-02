@@ -389,6 +389,7 @@ body {
   .section-two h2 {
     color: #ffffff;
     text-decoration: underline #a6b800;
+    font-size: 24px;
   }
   .section-wrapper {
     display: flex;

@@ -29,6 +29,7 @@
           <a href="#Home">Home</a>
           <a href="#Education">Education</a>
           <a href="#Previous-Work">Previous Work</a>
+          <a href="#getintouch">Get In Touch</a>
         </div>
       </div>
     </header>
@@ -270,106 +271,98 @@
           </div>
         </div>
       </a>
-      <div class="section-four-container-two">
-        <div class="wrapping">
-          <h2>GET IN TOUCH</h2>
-          <hr>
-          <div id="map" style="height: 500px;"></div>
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              // Create a map instance and set the view to Melbourne
-              var map = L.map("map").setView([-37.8136, 144.9631], 13);
-        
-              // Add a tile layer to the map using OpenStreetMap as the base layer
-              L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              }).addTo(map);
-        
-              // Add a marker for Melbourne
-              var melbourneMarker = L.marker([-37.8136, 144.9631]).addTo(map);
-              melbourneMarker.bindPopup("<b>Stardust Heights</b>").openPopup();
-            });
-          </script>
-          <div class="context">
-            <div class="contact-info-container">
-              <div class="contact-info">
-                <p>Write me</p>
-                <a href="mailto:ahmadkaddour0326@gmail.com">ahmadkaddour0326@gmail.com</a>
+      <div id="getintouch">
+        <div class="section-four-container-two">
+          <div class="wrapping">
+            <h2>GET IN TOUCH</h2>
+            <hr>
+            <div id="map" style="height: 500px;"></div>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                // Create a map instance and set the view to Melbourne
+                var map = L.map("map").setView([-37.8136, 144.9631], 13);
+          
+                // Add a tile layer to the map using OpenStreetMap as the base layer
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+          
+                // Add a marker for Melbourne
+                var melbourneMarker = L.marker([-37.8136, 144.9631]).addTo(map);
+                melbourneMarker.bindPopup("<b>Stardust Heights</b>").openPopup();
+              });
+            </script>
+            <div class="context">
+              <div class="contact-info-container">
+                <div class="contact-info">
+                  <p>Write me</p>
+                  <a href="mailto:ahmadkaddour0326@gmail.com">ahmadkaddour0326@gmail.com</a>
+                </div>
+                <div class="contact-info">
+                  <span>Location</span>
+                  <p>456 Moonbeam Crescent,</p>
+                  <p>Stardust Heights</p>
+                </div>
+                <div class="contact-info">
+                  <p>Follow me</p>
+                  <a href="Facebook">Facebook.</a>
+                  <a href="Linkedin">Linkedin.</a>
+                  <a href="Instagram">Instagram.</a>
+                  <a href="Airtasker">Airtasker.</a>
+                </div>
               </div>
-              <div class="contact-info">
-                <span>Location</span>
-                <p>456 Moonbeam Crescent,</p>
-                <p>Stardust Heights</p>
-              </div>
-              <div class="contact-info">
-                <p>Follow me</p>
-                <a href="Facebook">Facebook.</a>
-                <a href="Linkedin">Linkedin.</a>
-                <a href="Instagram">Instagram.</a>
-                <a href="Airtasker">Airtasker.</a>
+            
+              <div class="form-container">
+                <span>Or fill this form</span>
+                <form action="#" method="post">
+                  <div class="line">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+            
+                  <div class="line">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                  </div>
+            
+                  <div class="line">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                  </div>
+            
+                  <div class="line">
+                    <label for="message">Tell me about your project</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                  </div>
+            
+                  <input type="submit" value="Send">
+                </form>
               </div>
             </div>
-          
-            <div class="form-container">
-              <span>Or fill this form</span>
-              <form action="#" method="post">
-                <div class="line">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-                </div>
-          
-                <div class="line">
-                  <label for="email">Email</label>
-                  <input type="text" id="email" name="email" required>
-                </div>
-          
-                <div class="line">
-                  <label for="company">Company</label>
-                  <input type="text" id="company" name="company" required>
-                </div>
-          
-                <div class="line">
-                  <label for="message">Tell me about your project</label>
-                  <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-          
-                <input type="submit" value="Send">
-              </form>
+            </section>
             </div>
-          </div>
-          <hr>
-          </section>
-          </div>
+            
+      
+        <section class="section-five">
+          <footer class="footer">
+            <footer>
+              <div class="footer-wrapper">
+            <div class="text-wrapper">
+              &copy;Ahmad's Portfolio 2023
+            </div>
+            <div class="links">
+              <a href="https://www.facebook.com/">Facebook</a>
+              <a href="https://about.instagram.com/blog/announcements/threads-instagram-text-feature">Threads</a>
+              <a href="https://www.instagram.com/">Instagram</a>
+              <a href="https://dribbble.com/shots">Dribbble</a>
+            </div>
+              </div>
+          </footer>
           
-    
-      <section class="section-five">
-        <div class="marquee">
-          <img src="design-3.png" width="200" height="200" alt="Img-1">
-          <img src="design-1.png" width="200" height="200" alt="Img-2">
-          <img src="design-2.png" alt="Img-3">
-          <img src="design.png" width="200" height="200" alt="Img-4">
-          <img src="design-4.png" width="200" height="200" alt="Img-5">
         </div>
-      </section>
+  </div>
       </div>
-      <div class="section-five-container-one">
-        <footer class="footer">
-          <footer>
-            <div class="footer-wrapper">
-          <div class="text-wrapper">
-            &copy;Ahmad's Portfolio 2023
-          </div>
-          <div class="links">
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://about.instagram.com/blog/announcements/threads-instagram-text-feature">Threads</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://dribbble.com/shots">Dribbble</a>
-          </div>
-            </div>
-        </footer>
-        
-      </div>
-</div>
+      
 </body> 
     </div>
 </html>

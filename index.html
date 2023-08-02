@@ -25,13 +25,28 @@
   </head>
   <body>
     <header>
-      <div class="menu">
-          <a href="#Home">Home</a>
-          <a href="#Education">Education</a>
-          <a href="#Previous-Work">Previous Work</a>
-          <a href="#getintouch">Get In Touch</a>
+      <button class="menu-button" onclick="toggleMenu()">
+        <div class="menu-icon">
+          <span class="material-symbols-outlined">
+            menu
+            </span>
         </div>
-      </div>
+      </button>
+      <ul class="menu-list" id="menuList">
+        <li><a href="#getintouch">Get In Touch</a></li>
+        <li><a href="#Previous-Work">Previous Work</a></li>
+        <li><a href="#Education">Education</li>
+        <li><a href="#Home">Home</a></li>
+        <!-- Add more menu items here -->
+      </ul>
+      <script>
+        function toggleMenu() {
+  const menuList = document.getElementById('menuList');
+  menuList.style.display = (menuList.style.display === 'none') ? 'block' : 'none';
+}
+
+      </script>
+      
     </header>
     <div id="Home">
       <section class="section-one">

@@ -4,7 +4,6 @@ body {
 
  
 
-  /* Content Styles */
   .content {
     display: none;
     text-align: center;
@@ -26,7 +25,7 @@ body {
     border-radius: 5px;
   }
 
-  /* Content Styles */
+
   .content {
     display: none;
     text-align: center;
@@ -114,7 +113,7 @@ body {
   .social-media button {
     bottom: 0;
     left: 0;
-    margin: 5px; /* Optional: Add some margin to give it some space from the bottom and left edges */
+    margin: 5px; 
   }
 
   .social-media button a{
@@ -248,12 +247,9 @@ body {
     display: inline;
   }
   .container-two .higher {
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
     display: inline;
-    flex-direction: column;
-    letter-spacing: -1px;
-    line-height: 30px;
   }
 
   .lower {
@@ -264,7 +260,6 @@ body {
     text-align: left;
   }
   
-  /* Style the testimonial cards */
   .text-cards {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -315,7 +310,7 @@ body {
     list-style: none;
   }
   
-  /* Optional: Customize the slider navigation dots */
+  
   .splide__pagination__page {
     background-color: #333;
     width: 12px;
@@ -404,21 +399,20 @@ body {
     padding: 50px 0;
   }
 
-  /* Container for "Education" heading */
+
   .container-one {
     text-align: center;
     margin-bottom: 30px;
   }
 
-  /* Heading "Education" */
+
   .container-one h3 {
     font-size: 24px;
     color: #FFF;
     text-decoration: underline #e6ff00;
   }
 
-  /* Timeline */
-  /* Styling for the timeline container */
+  
   .timeline {
     display: flex;
     flex-wrap: nowrap;
@@ -438,9 +432,9 @@ body {
   background-color: #45a049;
 }
 
-  /* Styling for timeline items */
+  
   .timeline-item {
-    flex: 0 0 300px; /* Set a fixed width for each item */
+    flex: 0 0 300px; 
     margin-right: 20px;
     padding: 20px;
     background-color: #333;
@@ -468,39 +462,38 @@ body {
     font-size: 16px;
   }
   
-  /* Section Three Container Two */
   .section-three-container-two {
     padding: 50px 0;
     text-align: left;
   }
 
-  /* Skills Chart Heading "My Skills" */
+  
   .section-three-container-two h3 {
     text-decoration: underline #ADC000;
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
-  /* Skills Chart Category "L A N G U A G E" */
+  
   .section-three-container-two h2 {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       text-align: left;
-      font-size: 36px;
+      font-size: 1.3rem;
       margin: 0;
       padding: 0;
       color: #333;
       text-decoration: none;
   }
 
-  /* Skills Chart Container */
+  
   .skills-chart {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* Individual Skill */
+  
   .skill {
     width: 200px;
     padding: 20px;
@@ -509,14 +502,13 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  /* Skill Name and Percentage */
   .skill-name p {
     font-size: 18px;
     margin: 0;
     color: #fff;
   }
 
-  /* Progress Bar Container */
+  
   .progress-bar {
     background-color: #f0f0f0;
     height: 20px;
@@ -524,7 +516,7 @@ body {
     overflow: hidden;
   }
 
-  /* Progress Bar */
+  
   .progress {
     height: 100%;
     background-color: #ADC000;
@@ -538,7 +530,7 @@ body {
     margin-bottom: 20px;
   }
 
-  /* Styling for image links */
+  
   .section-four-img-wrap {
     display: flex;
     justify-content: center;
@@ -580,167 +572,112 @@ body {
     opacity: 1;
   }
 
-  /* Styling for "GET IN TOUCH" section */
-  .section-four-container-two h2 {
-    color: #fff;
-    text-align: left;
-    margin-bottom: 20px;
-    text-decoration: underline #ADC000;
-  }
-
-  /* Styling for contact information */
-  .higher {
-    max-width: 400px;
-    margin: 0 auto;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  .higher span {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .higher a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .higher p {
-    color: #fff;
-    margin: 0;
-  }
-
-  /* Styling for the form */
-  .form {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  .form span {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  .form input[type="text"],
-  .form input[type="email"],
-  .form input[type="message"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .form button.btnn {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .form button.btnn a {
-    color: #000;
-    text-decoration: none;
-  }
-
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.higher {
-  max-width: 400px;
-  margin: 0 auto;
-  color: #fff;
+.section-four-container-two {
   padding: 20px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.higher span {
-  font-size: 18px;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-  text-align: left;
-}
-.higher p{
-  text-align: left;
+
+.wrapping {
+  text-align: center; 
 }
 
-.higher a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 15px;
-}
 
-.higher p {
-  color: #fff;
-  margin: 0;
-}
-.btnn {
-  width: 100%;
-  background-color: #000;
-  border: none;
+.wrapping h2 {
+  font-size: 24px; 
+  color: #fff; 
+  text-decoration: underline #ADC000;
+  text-align: left;
+  margin: 0; 
   padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
 }
-
-.link {
-  font-size: 12px;
-  margin-bottom: 20px;
-}
-
-.link a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.icons {
+.section-four-container-two{
   display: flex;
-  justify-content: center;
+}
+.context{
+  display: flex;
+  justify-content: space-between;
+}
+.contact-info{
+  display: block;
+}
+.contact-info p{
+  color: #fff;
+}
+.context a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.contact-info p{
+  color: #B3B3B3;
+  font-size: 1rem;
+}
+.contact-info{
+  margin-bottom: 60px;
+}
+.contact-info a:hover{
+  color: #a6b800;
+}
+.form-container span{
+  color: #aeaeae;
+}
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-
-
-input {
-  padding: 8px;
+.form-container label {
+  display: block;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  color: #000;
+  color: #333;
 }
 
-button {
-  padding: 10px;
-  color: #000000;
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
   border: none;
-  border-radius: 3px;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+  resize: vertical;
+  color: #FFF;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
+
+.form-container input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.line {
+  position: relative;
+}
+
+.line:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+
+
 .marquee {
   white-space: nowrap;
   overflow: hidden; 

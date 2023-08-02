@@ -591,26 +591,50 @@ body {
   margin: 0; 
   padding: 10px;
 }
-.section-four-container-two{
-  display: flex;
+.map{
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
 }
-.context{
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.context {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.contact-info-container {
+  display: block;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 10px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 10px;
 }
 .contact-info{
   display: block;
 }
 .contact-info p{
-  color: #fff;
+  color: azure;
 }
 .context a{
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
 }
+.contact-info span{
+  color: #fff;
+}
 .contact-info p{
-  color: #B3B3B3;
+  color: #fff;
   font-size: 1rem;
 }
 .contact-info{
@@ -621,6 +645,8 @@ body {
 }
 .form-container span{
   color: #aeaeae;
+  font-size: 0.853rem;
+  line-height: 1.4rem;
 }
 .form-container {
   max-width: 400px;

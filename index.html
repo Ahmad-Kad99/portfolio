@@ -176,38 +176,79 @@
           
         </div>
         <hr>
-        <div class="timeline">
-          <div class="timeline-item">
-
-              <div class="event">
-                  <span>2008-2015</span>
-                  <h3>Campbellfield Heights Primary School</h3>
-                  <p>Attended and completed primary school with distinction, fostering a strong foundation in various subjects and developing essential interpersonal skills.</p>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="event">
-                <span>2016-2O21</span>
-                  <h3>John Fawkner College</h3>
-                  <p>Graduated from high school with honors, demonstrating academic excellence and active participation in extracurricular activities, cultivating a well-rounded skill set.</p>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="event">
-                <span>2022-2023</span>
-                  <h3>Melbourne Polytechnic</h3>
-                  <p>Successfully completed a TAFE Diploma in Information Technology , gaining comprehensive knowledge and hands-on experience in the field, and achieving recognition for outstanding performance.</p>
-              </div>
-          </div>
-          <div class="timeline-item">
-              <div class="event">
-                <span>2023-Present</span>
-                  <h3>Zenu Internship/Apprentinceship</h3>
-                  <p>Engaged in a rewarding internship at Zenu, contributing to real-world software engineering projects and gaining invaluable experience in the industry under the guidance of seasoned professionals.</p>
-              </div>
-          </div>
-          <!-- Add more timeline items as needed -->
+        <div class="timeline-buttons">
+          <button class="active" onclick="showItems('all')">All</button>
+          <button onclick="showItems('past')">Past</button>
+          <button onclick="showItems('future')">Future</button>
       </div>
+  
+      <div class="timeline">
+          <div class="timeline-item past">
+              <div class="date">
+                <h2>Campbellfield Heights Primary School</h2>
+                <span>2008-2015</span>
+              </div>
+              <div class="event">
+                <p>Completed primary school education with distinction, demonstrating strong academic performance, excellent interpersonal skills, and a keen ability to engage and collaborate with peers and educators.</p>
+              </div>
+          </div>
+          <div class="timeline-item past">
+              <div class="date">
+                <h2>John Fawkner College</h2>
+                <span>2016 - 2021</span>
+              </div>
+              <div class="event">
+                <p>Successfully completed the Victorian Certificate of Education (VCE) with outstanding results, highlighting a dedication to academic excellence and the capacity to excel in a challenging and diverse range of subjects.</p>
+              </div>
+          </div>
+          <div class="timeline-item past">
+            <div class="date">
+              <h2>Melbourne Polytechnic</h2>
+              <span>2022 - 2023</span>
+            </div>
+            <div class="event">
+              <p>Attained a Diploma of Information Technology from TAFE, showcasing proficiency in a wide range of IT skills and practical experience gained through hands-on projects and coursework.</p>
+            </div>
+        </div>
+          <div class="timeline-item future">
+              <div class="date">
+                <h2>Zenu</h2>
+                <span>2023 - Present</span>
+              </div>
+              <div class="event">
+                <p>Participated in a prestigious internship program with Zenu, a leading tech company, where I had the opportunity to work on cutting-edge projects, collaborate with a dynamic team, and develop invaluable skills in the field of IT.</p>
+              </div>
+          </div>
+          <div class="timeline-item future">
+            <div class="date">
+              <h2>AK Solutions </h2>
+              <span>2023 - Present</span>
+            </div>
+            <div class="event">
+              <p>Participated in a prestigious internship program with AK solutions, a leading tech company, where I had the opportunity to work on cutting-edge projects, collaborate with a dynamic team, and develop invaluable skills in the field of IT.</p>
+            </div>
+        </div>
+      </div>
+      <script>
+        function showItems(filter) {
+    var items = document.querySelectorAll('.timeline-item');
+
+    if (filter === 'all') {
+        items.forEach(item => item.classList.add('show'));
+    } else {
+        items.forEach(item => {
+            if (item.classList.contains(filter)) {
+                item.classList.add('show');
+            } else {
+                item.classList.remove('show');
+            }
+        });
+    }
+}
+
+// Initially show all items
+showItems('all');
+      </script>
         <div class="section-three-container-two">
           <h3>My skills</h3>
           <h2> C O D I N G </h2>

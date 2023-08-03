@@ -461,70 +461,64 @@ body {
   }
 
   
-  .timeline {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-.timeline-item {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 30px;
-}
-
-.date {
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #e6ff00;
-    padding: 8px;
-    border-radius: 50%;
-    line-height: 1;
-}
-
-.event {
-    background-color: #333;
+  .timeline-buttons {
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-.event span{
-  color: #ADC000;
 }
 
-.event h3 {
-    margin-top: 0;
-    font-size: 22px;
+.timeline-buttons button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.event p {
-    margin: 10px 0;
-    color: #aeaeae;
-}
-@keyframes fadeInUp {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+.timeline-buttons button.active {
+    background-color: #fff;
 }
 
-/* Timeline connector line */
-.timeline-item:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 6px;
-    height: calc(100% - 40px);
-    border-left: 2px solid #333;
+.timeline {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Add some animations to make it look more dynamic */
 .timeline-item {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    display: none;
 }
+
+.timeline-item .date {
+    font-weight: bold;
+}
+.timeline-item.future{
+  background-color: #333;
+}
+
+.timeline-item.future p{
+    color: #fff;
+    background-color: #333;
+}
+.timeline-item.past span{
+  color:#a6b800 ;
+}
+.timeline-item.future span{
+  color: #a6b800;
+}
+
+.timeline-item.past {
+    color: #fff;
+    background-color:#333333 ;
+}
+
+.show {
+    display: block;
+}
+
   
 
   
@@ -642,10 +636,12 @@ body {
 /* Style for the h6 heading inside the div */
 .description h6 {
   color: #fff;
-  font-size: 16px;
-  font-weight: bold;
   margin: 0;
   padding: 5px 0;
+  font-size: .9rem;
+  line-height: 2rem;
+  margin: 0;
+  font-weight: 600;
 }
   
 
@@ -816,7 +812,7 @@ iframe{
 
 .line {
   position: relative;
-  background-color: #ADC000;
+  background-color:#000
 }
 
 .line:before {

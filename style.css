@@ -939,7 +939,7 @@ iframe{
 }
 
 .leaflet-popup-content-wrapper {
-  background-color:#000000;;
+  background-color: #000;
   color: #FDE100;
   border-radius: 5px;
 }

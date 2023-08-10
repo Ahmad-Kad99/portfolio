@@ -35,37 +35,37 @@
                 <span class="gameTitle">What's New</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame overwatch"></div>
+                <div class="imgGame sql"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">SQL</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame rocketLeague"></div>
+                <div class="imgGame web"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Websites and Platforms</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame cod"></div>
+                <div class="imgGame mobile"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Mobile Apps</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame furi"></div>
+                <div class="imgGame media"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Social Media Marketing</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame youtube"></div>
+                <div class="imgGame project"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Project Management</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame bro"></div>
+                <div class="imgGame virtual"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Virtualisation</span>
             </div>
             <div class="squareGame animated bounceInLeft">
-                <div class="imgGame outlast"></div>
+                <div class="imgGame network"></div>
                 <div class="gameText">Start</div>
                 <span class="gameTitle">Networking</span>
             </div>
@@ -83,23 +83,15 @@ $(document).ready(function(){
 		$('.gameTitle').hide();
 		$('#store').hide();
 		timeout();
-
-		// Variables for current position
 		var x, y;
 
 		function handleMouse(e) {
-		  // Verify that x and y already have some value
 		  if (x && y) {
-		    // Scroll window by difference between current and previous positions
 		    window.scrollBy(e.clientX - x, e.clientY - y);
 		  }
-
-		  // Store current position
 		  x = e.clientX;
 		  y = e.clientY;
 		}
-
-		// Assign handleMouse to mouse movement events
 		document.onmousemove = handleMouse;
 
 		 $(window).scroll(function(){

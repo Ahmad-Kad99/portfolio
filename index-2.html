@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad's Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ahmad's Portfolio</h1>
+  </header>
+  <div class="container">
+    <div class="campaign-card">
+      <h2 class="campaign-title">Chapter 1: The Quest Begins</h2>
+      <p class="campaign-description">Embark on a grand adventure to save the kingdom from the clutches of darkness.</p>
+      <a href="chapter-one.html" class="campaign-button" onclick="launchMission(1)">Launch Mission</a>
+    </div>
+    <div class="campaign-card">
+      <h2 class="campaign-title">Chapter 2: Trials of Strength</h2>
+      <p class="campaign-description">Train and prepare for the challenges that lie ahead.</p>
+      <a href="chapter-two.html" class="campaign-button" onclick="launchMission(2)">Launch Mission</a>
+    </div>
+    <div class="campaign-card">
+      <h2 class="campaign-title">Chapter 3: The Final Battle</h2>
+      <p class="campaign-description">Gather your allies and confront the ultimate evil threatening the realm.</p>
+      <a href="#" class="campaign-button" onclick="launchMission(3)">Launch Mission</a>
+    </div>
+  </div>
+
+  <script>
+    function launchMission(chapterNumber) {
+      alert("Starting Chapter " + chapterNumber);
+      // You can add more game logic here, such as loading the actual chapter content.
+    }
+  </script>
+</body>
+</html>

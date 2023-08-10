@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Video Quiz</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(campaign.png);
+  }
+
+  .quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .question {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .option:hover {
+    background-color: #e0e0e0;
+  }
+</style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="question">Question: Where did Ahmad go to Primary school?</div>
+    <div class="video-container">
+      <iframe width="800" height="800" src="https://www.youtube.com/embed/yoFWa3si1so" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="options">
+      <div class="option" onclick="checkAnswer('A')">A. CHPS</div>
+      <div class="option" onclick="checkAnswer('B')">B. BPS</div>
+      <div class="option" onclick="checkAnswer('C')">C. WPS</div>
+      <div class="option" onclick="checkAnswer('D')">D. RPS</div>
+    </div>
+  </div>
+
+  <script>
+    function checkAnswer(selectedOption) {
+      const correctOption = 'A'; // Correct answer
+
+      if (selectedOption === correctOption) {
+        alert("Correct!");
+        // You can implement further actions for a correct answer.
+      } else {
+        alert("Incorrect. Try again.");
+        // You can implement further actions for an incorrect answer.
+      }
+    }
+
+    // Add event listener to video play event
+    const video = document.getElementById('quizVideo');
+    video.addEventListener('play', function() {
+      // You can add logic to trigger events when the video starts playing.
+      console.log("Video is playing!");
+    });
+  </script>
+</body>
+</html>

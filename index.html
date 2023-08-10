@@ -1,461 +1,201 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-    <link
-      href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <title>Ahmad's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <button class="menu-button" onclick="toggleMenu()">
-        <div class="menu-icon">
-          <span class="material-symbols-outlined">
-            menu
-            </span>
-        </div>
-      </button>
-      <ul class="menu-list" id="menuList">
-        <li><a href="#getintouch">Get In Touch</a></li>
-        <li><a href="#Interests">Interests</a></li>
-        <li><a href="#Previous-Work">Previous Work</a></li>
-        <li><a href="#Education">Education</li>
-        <li><a href="#Home">Home</a></li>
-        <!-- Add more menu items here -->
-      </ul>
-      <script>
-        function toggleMenu() {
-  const menuList = document.getElementById('menuList');
-  menuList.style.display = (menuList.style.display === 'none') ? 'block' : 'none';
-}
-
-      </script>
-      
-    </header>
-    <div id="Home">
-      <section class="section-one">
-        <div class="container-one">
-          <div class="img-wrapper">
-            <img src="design-3.png" width="300" height="300" />
-          </div>
-        </div>
-        <div class="container-two">
-          <div class="upper">
-            <span>Hello everyone 👋</span>
-            <h1>I'm Ahmad Kaddour I am a <span>Developer</span></h1>
-            <hr />
-          </div>
-          <div class="lower">
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> calendar_month </span>
-              <p class="text">26.07.2003</p>
-            </div>
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> phone </span>
-              <a class="text" href="https://www.whatsapp.com/">572-819-364</a>
-            </div>
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> email </span>
-              <a class="text" href="mailto:ahmadkaddour0326@gmail.com"
-                >ahmadkaddour0326@gmail.com</a
-              >
-            </div>
-            <div class="icon-container">
-              <span class="material-symbols-outlined"> pin_drop </span>
-              <p class="text">Melbourne,Australia</p>
-            </div>
-          </div>
-        </div>
-        <div class="container-three">
-          <p>
-            I am a Frontend developer at Zenu Real Estate CRM Website Builder. I
-            am also currently a retail assistant at Kmart. I have been at Kmart
-            for 2 years and decided to explore options in IT and luckily for me
-            Zenu came along 3 months ago and have provided me with on the job
-            training to help expand my programming skills. Zenu has helped me grow
-            not just as a programmer but as a person.
-          </p>
-        </div>
-      </section>
-      
-    <section class="section-two">
-      <div class="container-one">
-        <h2>What i do</h2>
-      </div>
-      <div class="icon-container">
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> computer </span>
-          <span class="text">Websites and Platforms</span>
-        </div>
-
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> phone_iphone </span>
-          <span class="text">Mobile Applications</span>
-        </div>
-
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> chess </span>
-          <span class="text">Strategy and Branding</span>
-        </div>
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> photo_camera </span>
-          <span class="text">Product Photography</span>
-        </div>
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> search </span>
-          <span class="text">Seo Optimisation</span>
-        </div>
-        <div class="icon-wrapper">
-          <span class="material-symbols-outlined"> share </span>
-          <span class="text">Social Media Management</span>
-        </div>
-      </div>
-      
-      <div class="container-two">
-        <div class="higher">
-          <h2>What The People Saying</h2>
-        </div>
-        <div class="lower">
-          <div class="splide" id="quote-slider">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="text-cards">
-                    <span class="material-symbols-outlined">format_quote</span>
-                    <p>
-                      Ahmad shares a fair price with his customers and has really
-                      established himself as an all-round developer.
-                    </p>
-                    <hr>
-                    <div class="image-container">
-                      <img src="https://picsum.photos/200/200" alt="Founder" />
-                      <h3>Lunaire Caelius</h3>
-                      <p>Founder</p>
-                    </div>
-                  </div>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          new Splide("#quote-slider", {
-            type: "loop",
-            perPage: 2,
-            autoplay: true,
-            pauseOnHover: false,
-            interval: 2000,
-          }).mount();
-        });
-      </script>
-    </section>
-    </div>
+<head>
+    <meta charset="UTF-8">
+        <title>Ahmad's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+      <header>
+            <div id="plus"></div>
+            <div id="info"></div>
+            <div id="textInfo">Ahmad's Portfolio</div>
+            <div id="friends"></div>
+            <div id="user"></div>
+            <div id="userName">Ahmadkad99</div>
+            <div id="trophies"></div>
+            <div id="clock">10:02 PM</div>
+        </header>
     
-    <div id="Education">
-      <section class="section-three">
-        <div class="container-one">
-          <h3>Education</h3>
-          
-        </div>
-        <hr>
-        <div class="timeline-buttons">
-          <button class="active" onclick="showItems('all')">All</button>
-          <button onclick="showItems('past')">Past</button>
-          <button onclick="showItems('future')">Current</button>
-      </div>
-  
-      <div class="timeline">
-          <div class="timeline-item past">
-              <div class="date">
-                <h2>Campbellfield Heights Primary School</h2>
-                <span>2008-2015</span>
-              </div>
-              <div class="event">
-                <p>Completed primary school education with distinction, demonstrating strong academic performance, excellent interpersonal skills, and a keen ability to engage and collaborate with peers and educators.</p>
-              </div>
-          </div>
-          <div class="timeline-item past">
-              <div class="date">
-                <h2>John Fawkner College</h2>
-                <span>2016 - 2021</span>
-              </div>
-              <div class="event">
-                <p>Successfully completed the Victorian Certificate of Education (VCE) with outstanding results, highlighting a dedication to academic excellence and the capacity to excel in a challenging and diverse range of subjects.</p>
-              </div>
-          </div>
-          <div class="timeline-item past">
-            <div class="date">
-              <h2>Melbourne Polytechnic</h2>
-              <span>2022 - 2023</span>
-            </div>
-            <div class="event">
-              <p>Attained a Diploma of Information Technology from TAFE, showcasing proficiency in a wide range of IT skills and practical experience gained through hands-on projects and coursework.</p>
-            </div>
-        </div>
-          <div class="timeline-item future">
-              <div class="date">
-                <h2>Zenu</h2>
-                <span>2023 - Present</span>
-              </div>
-              <div class="event">
-                <p>Participated in a prestigious internship program with Zenu, a leading tech company, where I had the opportunity to work on cutting-edge projects, collaborate with a dynamic team, and develop invaluable skills in the field of IT.</p>
-              </div>
-          </div>
-          <div class="timeline-item future">
-            <div class="date">
-              <h2>AK Technologies </h2>
-              <span>2023 - Present</span>
-            </div>
-            <div class="event">
-              <p>Participated in a prestigious internship program with AK technologies, a leading tech company, where I had the opportunity to work on cutting-edge projects, collaborate with a dynamic team, and develop invaluable skills in the field of IT.</p>
-            </div>
-        </div>
-      </div>
-      <script>
-        function showItems(filter) {
-    var items = document.querySelectorAll('.timeline-item');
-
-    if (filter === 'all') {
-        items.forEach(item => item.classList.add('show'));
-    } else {
-        items.forEach(item => {
-            if (item.classList.contains(filter)) {
-                item.classList.add('show');
-            } else {
-                item.classList.remove('show');
-            }
-        });
-    }
-}
-
-// Initially show all items
-showItems('all');
-      </script>
-        <div class="section-three-container-two">
-          <h3>My skills</h3>
-          <h2> C O D I N G </h2>
-          <div class="skills-chart">
-            <div class="skill">
-              <div class="skill-name">
-                <p>HTML</p>
-                <p>70%</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <p>CSS</p>
-                <p>80%</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <p>JavaScript</p>
-                <p>30%</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: 30%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-name">
-                <p>ColdFusion</p>
-                <p>20%</p>
-              </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: 20%"></div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-        <div class="subjects">
-          <h2>S U B J E C T S</h2>
-          <div class="circle-outline">100%</div>
-          <div class="description">
-            <h6>English</h6>
-          </div>
-          <div class="circle-outline">100%</div>
-          <div class="description">
-            <h6>Art</h6>
-          </div>
-          <div class="circle-outline">100%</div>
-          <div class="description">
-            <h6>History</h6>
-          </div>
-          <div class="circle-outline">100%</div>
-          <div class="description">
-            <h6>PE</h6>
-          </div>
-        </div>
-      </div>
-      </section>
-    <div id="Previous-Work">
-      <section class="section-four">
-        <div class="container-one">
-        <h3>Previous Work</h3>
-        
-        </div>
-        <hr>
-      <div class="section-four-img-wrap">
-        <a href="https://ahmad-kad99.github.io/portfolio/index-1.html" class="image-link">
-          <img src="https://picsum.photos/200/300?random=1">
-          <div class="overlay-text">
-            <h2>Portfolio</h2>
-          </div>
-        </a>
-          <div class="section-four-img-wrap">
-            <a href="https://ahmad-kad99.github.io/portfolio/index-1.html" class="image-link">
-              <img src="https://picsum.photos/200/300?random=1">
-          <div class="overlay-text">
-            <h2>Portfolio</h2>
-          </div>
-          </div>
-        </a>
-        
-
-          <div class="section-four-img-wrap">
-            <a href="https://ahmad-kad99.github.io/portfolio/index-1.html" class="image-link">
-              <img src="https://picsum.photos/200/300?random=1">
-          <div class="overlay-text">
-            <h2>Portfolio</h2>
-          </div>
-          </div>
-        </div>
-        <hr>
-      </a>
-      <div id="Interests">
-        <div class="book">
-          <h2>Interests</h2>
-        </div>
-        <div class="categories">
-          <ul>
-            <li><a href="https://www.carltonfc.com.au/"><img src="Carlton_FC_Logo_2020.png" width="200" height="200" alt=""></a></li>
-            <li><a href="https://www.brainyquote.com/topics/motivational-quotes"><img src="quote.gif" width="200" height="200" alt=""></a></li>
-            <li><a href="https://www.streetfighter.com/"><img src="917.gif" width="200" height="200" alt=""></a></li>
-            <li><a href="https://allpoetry.com/"><img src="poem.png" width="200" height="200" alt=""></a></li>
-          </ul>
-        </div>
-          <hr>
-         
-      </div>
-      <div id="getintouch">
-        <div class="section-four-container-two">
-          <div class="wrapping">
-            <h2>GET IN TOUCH</h2>
-            <hr>
-            <div id="map" style="height: 500px;"></div>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                // Create a map instance and set the view to Melbourne
-                var map = L.map("map").setView([-37.8136, 144.9631], 13);
-          
-                // Add a tile layer to the map using OpenStreetMap as the base layer
-                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-          
-                // Add a marker for Melbourne
-                var melbourneMarker = L.marker([-37.8136, 144.9631]).addTo(map);
-                melbourneMarker.bindPopup("<b>Stardust Heights</b>").openPopup();
-              });
-            </script>
-            <div class="context">
-              <div class="contact-info-container">
-                <div class="contact-info">
-                  <p>Write me</p>
-                  <a href="mailto:ahmadkaddour0326@gmail.com">ahmadkaddour0326@gmail.com</a>
+    
+        <div id="games">
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame ps"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Education</span>
+                <div id="store">
+                    <div id="god" class="storeGame"></div>
+                    <div id="raider" class="storeGame"></div>
+                    <div id="codi" class="storeGame"></div>
+                    <div id="mafia" class="storeGame"></div>
                 </div>
-                <div class="contact-info">
-                  <span>Location</span>
-                  <p>456 Moonbeam Crescent,</p>
-                  <p>Stardust Heights</p>
-                </div>
-                <div class="contact-info">
-                  <p>Follow me</p>
-                  <a href="Facebook">Facebook.</a>
-                  <a href="Linkedin">Linkedin.</a>
-                  <a href="Instagram">Instagram.</a>
-                  <a href="Airtasker">Airtasker.</a>
-                </div>
-              </div>
-            
-              <div class="form-container">
-                <span>Or fill this form</span>
-                <form action="/" method="post">
-                  <div class="line">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-            
-                  <div class="line">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required>
-                  </div>
-            
-                  <div class="line">
-                    <label for="company">Company</label>
-                    <input type="text" id="company" name="company" required>
-                  </div>
-            
-                  <div class="line">
-                    <label for="message">Tell me about your project</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                  </div>
-            
-                  <input type="submit" value="Send">
-                </form>
-              </div>
             </div>
-            </section>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame new"></div>
+                <div class="gameText ascii">▼</div>
+                <span class="gameTitle">What's New</span>
             </div>
-            
-      
-        <section class="section-five">
-          <footer class="footer">
-            <footer>
-              <div class="footer-wrapper">
-            <div class="text-wrapper">
-              &copy;Ahmad's Portfolio 2023
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame overwatch"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">SQL</span>
             </div>
-            <div class="links">
-              <a href="https://www.facebook.com/">Facebook</a>
-              <a href="https://about.instagram.com/blog/announcements/threads-instagram-text-feature">Threads</a>
-              <a href="https://www.instagram.com/">Instagram</a>
-              <a href="https://dribbble.com/shots">Dribbble</a>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame rocketLeague"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Websites and Platforms</span>
             </div>
-              </div>
-          </footer>
-          
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame cod"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Mobile Apps</span>
+            </div>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame furi"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Social Media Marketing</span>
+            </div>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame youtube"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Project Management</span>
+            </div>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame bro"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Virtualisation</span>
+            </div>
+            <div class="squareGame animated bounceInLeft">
+                <div class="imgGame outlast"></div>
+                <div class="gameText">Start</div>
+                <span class="gameTitle">Networking</span>
+            </div>
         </div>
-  </div>
-      </div>
-      
-</body> 
-    </div>
-</html>
- 
+    
+        <div class='box'>
+          <div class='wave -one'></div>
+          <div class='wave -two'></div>
+          <div class='wave -three'></div>
+        </div>
+        <Script>
+
+$(document).ready(function(){
+		$(".gameText").hide();
+		$('.gameTitle').hide();
+		$('#store').hide();
+		timeout();
+
+		// Variables for current position
+		var x, y;
+
+		function handleMouse(e) {
+		  // Verify that x and y already have some value
+		  if (x && y) {
+		    // Scroll window by difference between current and previous positions
+		    window.scrollBy(e.clientX - x, e.clientY - y);
+		  }
+
+		  // Store current position
+		  x = e.clientX;
+		  y = e.clientY;
+		}
+
+		// Assign handleMouse to mouse movement events
+		document.onmousemove = handleMouse;
+
+		 $(window).scroll(function(){
+	        if ($(this).scrollTop() > 10) {
+	            $('header').css("background-color","rgba(34,123,165,.8)");
+	        } else {
+	            $('header').css("background-color","rgba(255,255,255,0)");
+	        }
+	    });
+	});
+
+	
+	var time = 0;
+
+	function timeout() {
+	    setTimeout(function () {
+	    	if(time===0){
+				$("#textInfo").text("Add me on GitHub AhmadKad99");
+				$("#textInfo").addClass("animated slideInDown");
+				time++;
+			}else
+				if(time===1){
+				$("#textInfo").text("Add me on Instagram ahmad_kaddour99");
+				$("#textInfo").addClass("animated slideInDown");
+				time++;
+			}else
+				if(time===2){
+				$("#textInfo").text("Find me on Linkedin Ahmad Kaddour");
+				$("#textInfo").addClass("animated slideInDown");
+				time=0;
+			}
+			setTimeout(function () {
+				$("#textInfo").removeClass("animated slideInDown");
+	    	}, 1000);
+	        timeout();
+	    }, 4000);
+	}
+
+	$(".squareGame").hover(
+		function(){
+			$(this).find('.gameText').show();
+			$(this).find('.gameTitle').show();
+			$(this).find('#store').show();
+		},
+		function(){
+			$(this).find('.gameText').hide();
+			$(this).find('.gameTitle').hide();
+			$(this).find('#store').hide();
+		}
+	);
+
+function init() {
+	  'use strict'
+	  function select(a) {
+	    return document.querySelector(a);
+	  }
+	  var randomNum = Math.floor((Math.random() * 24) + 1),
+	      triangle = select('.triangle img'),
+	      circle = select('.circle img'),
+	      cross = select('.cross img'),
+	      box = select('.boxi img'),
+	      link = 'http://kapilnemo.free.fr/codepen/playstation-loading/',
+	      order = [
+	        [1,2,3,4],
+	        [1,2,4,3],
+	        [1,3,2,4],
+	        [1,3,4,2],
+	        [1,4,2,3],
+	        [1,4,3,2],
+	        [2,1,3,4],
+	        [2,1,4,3],
+	        [2,3,1,4],
+	        [2,3,4,1],
+	        [2,4,1,3],
+	        [2,4,3,1],
+	        [3,1,2,4],
+	        [3,1,4,2],
+	        [3,2,1,4],
+	        [3,2,4,1],
+	        [3,4,1,2],
+	        [3,4,2,1],
+	        [4,1,2,3],
+	        [4,1,3,2],
+	        [4,2,1,3],
+	        [4,2,3,1],
+	        [4,3,1,2],
+	        [4,3,2,1]
+	      ];
+
+	  triangle.src = link + order[randomNum][0] + ".png";
+	  circle.src = link + order[randomNum][1] + ".png";
+	  cross.src = link + order[randomNum][2] + ".png";
+	  box.src = link + order[randomNum][3] + ".png";
+
+
+	}
+	window.setInterval(init, 2000);
+        </Script>
+    </body>

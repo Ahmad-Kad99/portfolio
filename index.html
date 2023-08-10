@@ -36,37 +36,37 @@
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame sql"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://www.w3schools.com/sql/sql_intro.asp">Start</a></div>
                 <span class="gameTitle">SQL</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame web"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="index-1.html">Start</a></div>
                 <span class="gameTitle">Websites and Platforms</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame mobile"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://www.ibm.com/topics/mobile-application-development">Start</a></div>
                 <span class="gameTitle">Mobile Apps</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame media"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://www.wordstream.com/social-media-marketing">Start</a></div>
                 <span class="gameTitle">Social Media Marketing</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame project"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://en.wikipedia.org/wiki/Project_management">Start</a></div>
                 <span class="gameTitle">Project Management</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame virtual"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://support.smartbear.com/readyapi/docs/virtualization/tutorials/samples.html">Start</a></div>
                 <span class="gameTitle">Virtualisation</span>
             </div>
             <div class="squareGame animated bounceInLeft">
                 <div class="imgGame network"></div>
-                <div class="gameText">Start</div>
+                <div class="gameText"><a href="https://www.arubanetworks.com/?utm_source=google&utm_medium=paidsearch&utm_campaign=Aru_FY23_Q2_ESP_GFD_NAAS_APJ_APJ_Agile_NaaS_-_2023&utm_geo=namer&gclid=EAIaIQobChMIvI332r3RgAMVgjCDAx1xfgD7EAAYASAAEgKF8PD_BwE">Start</a></div>
                 <span class="gameTitle">Networking</span>
             </div>
         </div>
@@ -190,4 +190,30 @@ function init() {
 	}
 	window.setInterval(init, 2000);
         </Script>
+
+<script>
+    $(document).ready(function () {
+        // ... Your existing code ...
+    
+        updateTime(); // Call this function to display the initial time
+        setInterval(updateTime, 1000); // Update time every second
+    
+        // ... Your existing code ...
+    });
+    
+    function updateTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+        const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+        const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+    
+        const timeString = formattedHours + ':' + formattedMinutes + ':' + formattedSeconds + ' ' + ampm;
+        $('#clock').text(timeString);
+    }
+    </script>
+    
     </body>

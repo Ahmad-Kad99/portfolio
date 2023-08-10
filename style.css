@@ -48,7 +48,7 @@ header div{
 
 #friends{
 	width: 3em;
-	background-image: url("GitHub-Mark.png");
+	background-image: url("gi272g34e-github-logo-github-logo-free-icon-of-garden-stroke.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -141,6 +141,14 @@ header div{
 	font-size: 1.2em;
 	font-family: Arial;
 	transform: translate(13.2em,-1.5em);
+}
+.gameText a {
+	color: white;
+	text-decoration: none;
+}
+
+.gameText:hover {
+	background-color: #2980b9;
 }
 
 .ascii{
